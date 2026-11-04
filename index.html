@@ -689,7 +689,7 @@ Gunakan kode subtes berikut: ${state.subtes.map(s => s.aliases[0] || s.nama).joi
 Jawaban pilihan ganda berupa huruf A-E. Jawaban isian berupa angka sebagai string.
 Jangan tambahkan teks lain di luar JSON.`;
 
-  const res = await fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent", {
+ const res = await fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent", {
     method: "POST",
     headers: { "Content-Type": "application/json", "x-goog-api-key": apiKey },
     body: JSON.stringify({
